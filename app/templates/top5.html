@@ -8,37 +8,45 @@
     <title>Top 5 Athletes</title>
 </head>
 <h1> My Top 5</h1>
-    {{my_text}}
+{{my_text}}
+
 <body>
     <ul>
         {% for name in names %}
-            <li>
-                <strong>{{Names}}</strong>
-            </li>
-            {% if name == 'Kobe Bryant'%}
-            <div class='Kobe'>
-        https://southpasadenan.com/wp-content/uploads/south-pasadena-news-01-27-2020-remembering-kobe-bryant-dead-lakers-basketball-andrew-bernstein-photography-01.jpg
-    </div>
-            {% if name == 'Deion Sanders'%}
-            <div class='Deion'>
-        https://insidethestar.com/wp-content/uploads/2015/08/cowboys-ctk-21-goes-primetime-with-deion-sanders-5.jpg
-    </div>
-            {% if name == 'Kam Chancellor'%}
-            <div class='Kam'>
-        https://www.pilotonline.com/resizer/vrO9xQale355ZpOafOhFgdEKnVU=/arc-anglerfish-arc2-prod-tronc/public/IYYD63BVO5DJ7LPLBNPDDLGVGM.jpg
-    </div>
-            {% if name == 'Serena Williams'%} 
-            <div class='Serena'>
-        https://www.planetsport.com/image-library/land/500/s/serena-williams-with-2016-wimbledon-trophy.jpg</div>
-            {% if name == 'Ed Reed'%}
-            <div class='Ed Reed'>https://pressboxonline.com/wp-content/uploads/2019/11/ed-reed-hof-11-lewis-800x445.jpg </div>
-            {% endif %}
+        <li>
+            <strong>{{Names}}</strong>
+        </li>
+        {% if name == 'Kobe Bryant'%}
+        <!-- <div class='Kobe'><img src="https://southpasadenan.com/wp-content/uploads/south-pasadena-news-01-27-2020-remembering-kobe-bryant-dead-lakers-basketball-andrew-bernstein-photography-01.jpg"> -->
+            
+        </div>
+        {% endif %}
+        {% if name == 'Deion Sanders'%}
+        <div class='Deion'>
+            <img src="https://insidethestar.com/wp-content/uploads/2015/08/cowboys-ctk-21-goes-primetime-with-deion-sanders-5.jpg">
+            
+        </div>
+        {% endif %}
+        {% if name == 'Kam Chancellor'%}
+        <div class='Kam'>
+            <img src="https://www.pilotonline.com/resizer/vrO9xQale355ZpOafOhFgdEKnVU=/arc-anglerfish-arc2-prod-tronc/public/IYYD63BVO5DJ7LPLBNPDDLGVGM.jpg">
+            
+        </div>
+        {% endif %}
+        {% if name == 'Serena Williams'%}
+        <div class='Serena'><img src="https://www.planetsport.com/image-library/land/500/s/serena-williams-with-2016-wimbledon-trophy.jpg">
+            </div>
+        {% endif %}
+        {% if name == 'Ed Reed'%}
+        <div class='Ed Reed'><img src="https://pressboxonline.com/wp-content/uploads/2019/11/ed-reed-hof-11-lewis-800x445.jpg"> 
+        </div>
+        {% endif %}
         {% endfor %}
-   
-   
-    
 
-</ul>
+
+
+
+    </ul>
 
 </body>
 
