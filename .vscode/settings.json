@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "postgres://ubpqdwpy:MdPwodecXQmZLXSJ4-EhhnSdCGgO51cS@baasu.db.elephantsql.com/ubpqdwpy",
+            "driver": "PostgreSQL",
+            "database": "ubpqdwpy",
+            "password": "MdPwodecXQmZLXSJ4-EhhnSdCGgO51cS",
+            "username": "Pokemon",
+            "name": "Pokemon",
+            "connectString": "postgres://ubpqdwpy:MdPwodecXQmZLXSJ4-EhhnSdCGgO51cS@baasu.db.elephantsql.com/ubpqdwpy"
+        }
+    ]
+}

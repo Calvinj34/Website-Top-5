@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-xl ">
+  <div class="container-fluid bg-body-danger">
+      <a class="navbar-brand" href="/my_profile">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+              alt="Pokemon Logo" width="100" height="auto"></a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active text-blue" aria-current="page" href="/">Search</a> 
+                       <li class="nav-item">
+                      <a class="nav-link text-blue" href="/signup">Sign Up</a>
+                  </li>
+                  </li>
+                  {% if current_user.is_authenticated %}
+                  <li class="nav-item">
+                      <a class="nav-link text-blue" href="/my_pokemon">fight</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-blue" href="/catch">Catch</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-blue" href="/team">{{current_user.username}}</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-blue" href="/logout">Log Out</a>
+                  </li>
+
+                  {% else %}
+
+                  <li class="nav-item">
+                      <a class="nav-link text-blue" href="/login">Log In</a>
+                  </li>
+                  {% endif %}
+              </ul>
+          </div>
+      </div>
+</nav>
